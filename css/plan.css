@@ -1,0 +1,12 @@
+.plan-page {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.plan-page__heading {
+  margin-top: 4rem;
+}

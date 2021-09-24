@@ -1,0 +1,387 @@
+:root {
+  --clr-blue: #1da1f2;
+  --clr-black: #000000;
+  --clr-body: #828282;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  overflow-x: hidden;
+}
+
+/* typography */
+html {
+  font-size: 62.5%;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: bold;
+  margin-bottom: 1.2rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1.6rem;
+  font-weight: 500;
+  letter-spacing: 0.8px;
+  line-height: 1.7;
+}
+
+p,
+span {
+  color: var(--clr-body);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2.8rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+}
+
+/* brand name */
+
+.brand__name {
+  font-size: 2rem;
+  font-weight: bold;
+  font-style: italic;
+  color: var(--clr-blue);
+}
+
+/* ========================= btn--auth =========================== */
+.btn {
+  border-radius: 0.5rem;
+  color: white;
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding: 1.5rem 3rem;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.btn--stretched {
+  width: 100%;
+  text-align: center;
+}
+
+.btn--auth {
+  background: var(--clr-blue);
+}
+
+.btn--auth::before {
+  content: url("../Assets/Twitter.svg");
+  display: inline-block;
+  margin-right: 8px;
+  transform: translateY(3px);
+}
+
+.btn--auth:hover {
+  opacity: 0.8;
+}
+
+.btn--arrow {
+  color: var(--clr-blue);
+}
+
+.btn--arrow::after {
+  content: "-->";
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.btn--arrow:hover::after {
+  margin-left: 8px;
+}
+
+/* ========================= users avatar ===================== */
+.user__avatar:nth-child(1) {
+  margin-left: 0;
+}
+
+.user__avatar {
+  margin-left: -2.5rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.user__avatar:hover {
+  margin-left: 2px;
+  margin-right: 2.5rem;
+}
+
+/* ======================== icons ================= */
+.icon {
+  width: 5rem;
+  height: 5rem;
+  cursor: pointer;
+}
+
+.icon--user__icon {
+  width: 2rem;
+  height: 2rem;
+}
+
+/* =========================== features card ============================= */
+.features__card {
+  padding: 2rem;
+  border-radius: 0.5rem;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+/* ========================= user card component ======================== */
+
+.user__card {
+  padding: 2.5rem;
+  background: white;
+  border-radius: 0.5rem;
+  height: max-content;
+}
+
+.user__header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.user__info {
+  align-items: center;
+  display: flex;
+}
+
+.user__profile {
+  width: 5rem;
+  height: 5rem;
+}
+
+.user__handle {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+  text-align: left;
+}
+
+.user__name {
+  color: var(--clr-black);
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 3px;
+}
+
+.user__twitter-handle {
+  font-size: 1.4rem;
+}
+
+.user__tweet {
+  margin: 2rem 0;
+}
+
+.user__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.user__heart-count {
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-left: 5px;
+}
+
+.user__like-container {
+  display: flex;
+  align-items: center;
+}
+
+/* ================================ plan component ========================== */
+
+.plan {
+  margin: 4rem;
+  padding: 2.5rem;
+  border-radius: 0.5rem;
+  border: 2px solid #fce5be;
+  background: #fbf8f3;
+}
+
+.plan__billing {
+  display: flex;
+  align-items: flex-end;
+}
+
+.plan__price {
+  vertical-align: baseline;
+  margin: 0 2px 0 0;
+}
+
+.plan__body {
+  margin: 3rem 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.plan__features {
+  margin: 1.5rem 0;
+  display: flex;
+}
+
+.icon--plan {
+  height: 20px;
+  margin-right: 1rem;
+  margin-top: 0.5rem;
+  width: 20px;
+}
+
+/* ==================== nav bar ===================== */
+.nav {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 0;
+}
+
+.icon--menu {
+  width: 3rem;
+  height: 3rem;
+  transition: all 0.3s;
+}
+
+.icon--menu:hover {
+  opacity: 0.5;
+}
+
+.nav__menu {
+  display: none;
+}
+
+.nav__menu {
+  align-items: center;
+}
+
+.nav__item {
+  font-size: 1.6rem;
+  margin: 0 1.5rem;
+  color: black;
+}
+
+@media screen and (min-width: 768px) {
+  .icon--menu {
+    display: none;
+  }
+
+  .nav__menu {
+    display: flex;
+  }
+}
+
+/* =================== footer ==================== */
+
+.footer {
+  align-items: center;
+  background: #d7f5f5;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.footer-link__container {
+  display: flex;
+  align-items: center;
+}
+
+.footer__link:nth-child(1)::before {
+  content: url("../Assets/twitter-black.svg");
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.footer__link {
+  margin: 0 1rem;
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
+  color: var(--clr-black);
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    padding: 2rem 5%;
+  }
+}
+
+@media screen and (min-width) {
+  .footer {
+    padding: 2rem 10%;
+  }
+}
+
+/*  ================== grid ====================== */
+.grid {
+  display: grid;
+  gap: 2rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .grid--cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+  }
+
+  .grid--cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

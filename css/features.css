@@ -1,0 +1,19 @@
+.features-page {
+  padding: 4rem 2rem;
+}
+
+.features__heading {
+  margin-bottom: 4rem;
+}
+
+@media screen and (min-width: 768px) {
+  .features-page {
+    padding: 5% 5%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .features-page {
+    padding: 5% 10%;
+  }
+}
