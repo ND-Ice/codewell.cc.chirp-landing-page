@@ -10,6 +10,8 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/landing.css" />
@@ -20,7 +22,7 @@
   </head>
   <body>
     <section class="landing-page">
-      <nav class="nav">
+      <nav class="nav" data-aos="fade-up">
         <a class="brand__name" href="">Chirp</a>
         <svg class="icon icon--menu">
           <use xlink:href="sprite.svg#menu"></use>
@@ -38,13 +40,15 @@
           class="hero-image hero-image--desktop"
           src="Assets/Hero Image (Desktop View).png"
           alt=""
+          data-aos="fade-up"
         />
         <img
           class="hero-image hero-image--tablet"
           src="Assets/Hero Image (Tablet View).png"
           alt=""
+          data-aos="fade-up"
         />
-        <div class="landing-page__content">
+        <div class="landing-page__content" data-aos="fade-up">
           <h1 class="landing__heading">
             Twitter analytics taken to a whole new level.
           </h1>
@@ -81,12 +85,12 @@
       </div>
     </section>
     <section class="features-page">
-      <h2 class="features__heading">
+      <h2 class="features__heading" data-aos="fade-down">
         Features that help you <br />
         Tweet smarter.
       </h2>
       <div class="grid grid--cols-2">
-        <div class="features__card">
+        <div class="features__card" data-aos="fade-right">
           <svg class="icon">
             <use xlink:href="sprite.svg#twitter-black"></use>
           </svg>
@@ -97,7 +101,7 @@
             with you content.
           </p>
         </div>
-        <div class="features__card">
+        <div class="features__card" data-aos="fade-left">
           <svg class="icon">
             <use xlink:href="sprite.svg#twitter-black"></use>
           </svg>
@@ -108,7 +112,7 @@
             an opportunity.
           </p>
         </div>
-        <div class="features__card">
+        <div class="features__card" data-aos="fade-up">
           <svg class="icon">
             <use xlink:href="sprite.svg#twitter-black"></use>
           </svg>
@@ -119,7 +123,7 @@
             likely to read.
           </p>
         </div>
-        <div class="features__card">
+        <div class="features__card" data-aos="fade-up">
           <svg class="icon">
             <use xlink:href="sprite.svg#twitter-black"></use>
           </svg>
@@ -133,7 +137,7 @@
     </section>
     <section class="testimonial-page">
       <div class="grid grid--cols-3">
-        <div class="user__card">
+        <div class="user__card" data-aos="fade-right">
           <div class="user__header">
             <div class="user__info">
               <img class="user__profile" src="Assets/userAvatar01.svg" alt="" />
@@ -161,7 +165,7 @@
           </div>
         </div>
 
-        <div class="user__card">
+        <div class="user__card" data-aos="fade-up">
           <div class="user__header">
             <div class="user__info">
               <img class="user__profile" src="Assets/userAvatar04.svg" alt="" />
@@ -190,7 +194,7 @@
           </div>
         </div>
 
-        <div class="user__card">
+        <div class="user__card" data-aos="fade-left">
           <div class="user__header">
             <div class="user__info">
               <img class="user__profile" src="Assets/userAvatar02.svg" alt="" />
@@ -219,7 +223,7 @@
         </div>
       </div>
     </section>
-    <section class="plan-page">
+    <section class="plan-page" data-aos="zoom-in-down">
       <h2 class="plan-page__heading">One simple price plan</h2>
       <p class="plan-page__desc">
         Start growing your Twitter account by analyzing your follower's patter
@@ -268,5 +272,9 @@
         <a class="footer__link" href="">Terms of Use</a>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
